@@ -1,0 +1,342 @@
+body {
+    /* Define la imagen de fondo, ajusta la URL y las propiedades según tu imagen */
+    background: url('https://i.pinimg.com/564x/6c/4a/e7/6c4ae78010f800fe4677a0d7e4eac84a.jpg') no-repeat center center fixed;
+    background-size: cover;/* Ajusta el tamaño de la imagen para que cubra todo el fondo */
+    background-attachment: fixed; /* Asegura que la imagen permanezca fija en su posición al hacer scroll */
+    background-color: hsl(330, 79%, 73%); /* Color de fondo si la imagen no carga o no se muestra */
+    
+    /* Establece la tipografía y otros estilos generales */
+    color: #D5E5F2; /* Color de texto */
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding: 0; /* Elimina el padding predeterminado del body */
+    /* Establece la tipografía y otros estilos generales */
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el nav */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Cambia el color de fondo al pasar el ratón */
+}
+
+.content, .container-estudios {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el contenido */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.imagenPersonal {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #000000;
+}
+
+/* estilo experiencia y estudios*/
+
+.section-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+/*experiencia*/
+.section-container h2 {
+    text-align: center;
+    font-size: 2em;
+}
+/*accenture*/
+.section-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+/*enero a marzo*/
+.section-container h4 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+/*texto*/
+.section-container p {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+/*mis estudios*/
+.container-estudios h2{
+    text-align: center;
+    font-size: 2em;
+}
+/*ies*/
+.container-estudios h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+/*marzo 2022*/
+.container-estudios h4 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/*tec programacion*/
+.container-estudios h5 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+/*marzo 2024*/
+.container-estudios h6 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+/*seccion proyectos*/
+.proyectos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.proyecto {
+    width: calc(33.33% - 10px); /* Ajustar el ancho según el número de proyectos */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.proyecto h3 {
+    margin-top: 10px;
+}
+
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+
+/*estilo botones*/
+button {
+    height: 35px;
+    margin: 5px;
+    width: 120px;
+    background: #dd39c2;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    border: solid #d666c3 1px;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #2e2d2d, #212121);
+    -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+      inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+      inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  }
+  
+  button:hover {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  
+  button:active {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    box-shadow: 1px 1px 13px #460d37b4, -1px -1px 33px #545b78;
+    color: #3f3880;
+    -webkit-transition: 100ms;
+    transition: 100ms;
+  }
+  
+
+/*botonproyectos*/
+  buttonProy {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.7em 2.4em;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: rgb(255, 247, 253);
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 500;
+  }
+  
+  buttonProy span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 4px solid #BF4B6A;
+  }
+  
+  buttonProy span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: var(--lightgray);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+  }
+  
+  buttonProy:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: #BF4B6A;
+  }
+  
+  buttonProy:hover {
+    color: white;
+  }
+  
+  buttonProy:active span::before {
+    background: #2751cd;
+  }
+
+
+
+/*Responsive */
+@media (max-width: 1200px) {
+    .container {
+        padding: 15px;
+    }
+    
+    nav a {
+        padding: 8px 15px;
+        margin: 0 8px;
+    }
+    
+    .content {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    p {
+        font-size: 1.1em;
+    }
+    
+    .imagenPersonal {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
+    .imagenPersonal {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 0.9em;
+    }
+    
+    .imagenPersonal {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Media query para pantallas pequeñas/ botones*/
+@media (max-width: 600px) {
+    button {
+        width: 100%; /* Haz que los botones ocupen el 100% del ancho del contenedor */
+        margin: 10px 0; /* Añade margen vertical para separarlos */
+        display: block; /* Asegura que los botones se alineen verticalmente */
+    }
+}
